@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="老和山比价网">
+<meta name="description" content="老和山比价网！发现最低价！">
+<meta name="keywords" content="老和山,比价,浙江大学">
+<title>老和山比价网</title>
+
+<!-- Le styles -->
+<link href="css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="css/layoutit.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/flat-ui.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="img/favicon.png">
+	
+	<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/jquery.htmlClean.js"></script>
+
+
+<script type="text/javascript" src="js/scripts.js"></script>
+
+
+<script language=JavaScript>
+	function InputCheck(LoginForm)
+	{
+		if(LoginForm.username.value == "")
+		{alert("请输入用户名！");
+		LoginForm.username.focus();
+		return (false);
+		}
+		if(LoginForm.password.value == "")
+		{alert("请输入密码！");
+		LoginForm.password.focus();
+		return (false);
+		}
+		return (true);
+	}
+	</script>
+
+</head>
+
+<body >
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<h1 class="text-info">
+				登陆
+			</h1>
+			<form name = "LoginForm" class="form-horizontal" method = "post" action = "login.php" onSubmit ="return InputCheck(this)">
+				<div class="control-group">
+					<label class="control-label" for="username">用户名</label>
+					<div class="controls">
+						<input id="username" name = "username" type="text" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPassword">密码</label>
+					<div class="controls">
+						<input id="password" type="password" name = "password"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<button class="btn" type="submit" name = "submit">登陆</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
